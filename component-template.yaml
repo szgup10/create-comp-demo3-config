@@ -16,7 +16,7 @@ spec:
     componentName: $(userInput.componentName)
     description: $(userInput.description)
     owner: $(userInput.owner)
-    teamSlug: $(dep.github-repository.team_slug)
+    team_slug: $(dep.github-repository.team_slug)
   template: ilo-fli-allen-create-comp-demo
   user_input: |
     {
