@@ -1,6 +1,7 @@
 {
-  "componentName": "",
-  "description": "",
+  "componentName": "{{cookiecutter.componentName}}",
+  "description": "{{cookiecutter.description}}",
   "repositoryName": "",
-  "owner": ""
+  "owner": "{{cookiecutter.owner}}",
+  "team_slug": "{{cookiecutter.owner}}"
 }
