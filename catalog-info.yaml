@@ -1,0 +1,16 @@
+apiVersion: ingka.com/v1alpha1
+kind: CookieCutterTemplate
+metadata:
+  title: ILO FLI Demo Workflow
+  name: fli-demo-template
+  tags:
+    - build
+spec:
+  owner: ilo-fli
+  input:
+    - componentName
+    - description
+    - repositoryName
+    - owner
+
+

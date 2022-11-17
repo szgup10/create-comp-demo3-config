@@ -1,0 +1,58 @@
+apiVersion: ingka.com/v1alpha1
+kind: ComponentTemplate
+metadata:
+  name: fli-demo-template
+  description: FLI Demo Template
+  title: FLI Demo Template
+  tags:
+    - java
+    - api
+    - microservice
+    - backend
+spec:
+  owner: ilo-fli
+  type: service # library, website, documentation, x
+  config:
+    componentName: $(userInput.componentName)
+    description: $(userInput.description)
+    repositoryName: $(userInput.repositoryName)
+    owner: $(userInput.owner)
+  template: fli-demo-template
+  user_input: |
+    {
+      "title": "Template variables",
+      "description": "These variables are required for the template",
+      "type": "object",
+      "properties": {
+        "componentName": {
+          "title": "Component Name",
+          "description": "Name of Component",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "description": "Component Description",
+          "type": "string"
+        },
+        "repositoryName": {
+          "title": "Repository Name",
+          "description": "Name of the repository to create",
+          "type": "string"
+        },
+        "owner": {
+          "title": "Owning Team",
+          "description": "Owner - INGKA Team",
+          "type": "string"
+        }
+      },
+      "required": ["componentName", "description", "repositoryName", "owner"]
+    }
+  dependencies:
+    - type: github-repository
+      spec: {}
+    - type: vault-github-oidc
+      spec:
+        namespace: $(dep.vault-onboard.namespace)
+        repository: $(dep.github-repository.name)
+        organization: $(dep.github-repository.owner)
+

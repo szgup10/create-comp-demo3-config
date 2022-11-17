@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: {{ cookiecutter.baseName }}
+  annotations:
+    github.com/project-slug: ingka-group-digital/{{ cookiecutter.repositoryName }}
+    github.com/team-slug: ingka-group-digital/{{ cookiecutter.teamSlug }}
+spec:
+  type: service
+  owner: {{ cookiecutter.ingkaTeam }}
+  lifecycle: experimental

@@ -1,0 +1,20 @@
+{
+  "name": "ilo-fli-allen-create-comp-demo",
+  "version": "1.0.0",
+  "description": "Allen Demo \"Create Component\" repository using templating to create a github repository.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingka-group-digital/ilo-fli-allen-create-comp-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingka-group-digital/ilo-fli-allen-create-comp-demo/issues"
+  },
+  "homepage": "https://github.com/ingka-group-digital/ilo-fli-allen-create-comp-demo#readme"
+}
