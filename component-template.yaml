@@ -16,7 +16,7 @@ spec:
     componentName: $(userInput.componentName)
     description: $(userInput.description)
     owner: $(userInput.owner)
-  template: fli-demo-template
+  template: ilo-fli-allen-create-comp-demo
   user_input: |
     {
       "title": "Template variables",
