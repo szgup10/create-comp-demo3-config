@@ -44,9 +44,3 @@ spec:
   dependencies:
     - type: github-repository
       spec: {}
-    - type: vault-github-oidc
-      spec:
-        namespace: $(dep.vault-onboard.namespace)
-        repository: $(dep.github-repository.name)
-        organization: $(dep.github-repository.owner)
-
