@@ -39,7 +39,7 @@ spec:
           "type": "string"
         }
       },
-      "required": ["componentName", "description", "repositoryName", "owner"]
+      "required": ["componentName", "description", "owner"]
     }
   dependencies:
     - type: github-repository
