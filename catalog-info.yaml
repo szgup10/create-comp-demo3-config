@@ -10,7 +10,6 @@ spec:
   input:
     - componentName
     - description
-    - repositoryName
     - owner
 
 

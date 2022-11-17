@@ -15,7 +15,6 @@ spec:
   config:
     componentName: $(userInput.componentName)
     description: $(userInput.description)
-    repositoryName: $(userInput.repositoryName)
     owner: $(userInput.owner)
   template: fli-demo-template
   user_input: |
@@ -32,11 +31,6 @@ spec:
         "description": {
           "title": "Description",
           "description": "Component Description",
-          "type": "string"
-        },
-        "repositoryName": {
-          "title": "Repository Name",
-          "description": "Name of the repository to create",
           "type": "string"
         },
         "owner": {
