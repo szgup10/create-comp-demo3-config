@@ -1,7 +1,7 @@
 {
-  "componentName": "{{cookiecutter.componentName}}",
-  "description": "{{cookiecutter.description}}",
-  "repositoryName": "",
-  "owner": "{{cookiecutter.owner}}",
-  "team_slug": "{{cookiecutter.owner}}"
+  "componentName": "FLI Templates",
+  "description": "FLI Temmplates Description",
+  "repositoryName": "ilo-fli-templates",
+  "owner": "ilo-fli",
+  "team_slug": "ilo-fli"
 }
