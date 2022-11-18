@@ -13,7 +13,7 @@ spec:
   owner: ilo-fli
   type: service # library, website, documentation, x
   config:
-    componentName: $(userInput.componentName)
+    baseName: $(userInput.baseName)
     description: $(userInput.description)
     owner: $(userInput.owner)
     team_slug: $(dep.github-repository.team_slug)
@@ -24,7 +24,7 @@ spec:
       "description": "These variables are required for the template",
       "type": "object",
       "properties": {
-        "componentName": {
+        "baseName": {
           "title": "Component Name",
           "description": "Name of Component",
           "type": "string"
@@ -40,7 +40,7 @@ spec:
           "type": "string"
         }
       },
-      "required": ["componentName", "description", "owner"]
+      "required": ["baseName", "description", "owner"]
     }
   dependencies:
     - type: github-repository

@@ -1,5 +1,5 @@
 {
-  "componentName": "FLI Templates",
+  "baseName": "FLI Templates",
   "description": "FLI Temmplates Description",
   "repositoryName": "ilo-fli-templates",
   "owner": "ilo-fli",
