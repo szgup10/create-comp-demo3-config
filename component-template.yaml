@@ -1,7 +1,7 @@
 apiVersion: ingka.com/v1alpha1
 kind: ComponentTemplate
 metadata:
-  name: fli-demo-template
+  name: ilo-fli-allen-create-comp-demo
   description: FLI Demo Template
   title: FLI Demo Template
   tags:
@@ -9,6 +9,8 @@ metadata:
     - api
     - microservice
     - backend
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/ingka-group-digital/ilo-fli-allen-create-comp-demo
 spec:
   owner: ilo-fli
   type: service # library, website, documentation, x
@@ -20,7 +22,7 @@ spec:
     ownerTeam: $(userInput.ownerTeam)
     language: $(userInput.language)
     systemAbbreviation: $(userInput.systemAbbreviation)
-  template: fli-demo-template
+  template: ilo-fli-allen-create-comp-demo
   user_input: |
     {
       "title": "Template variables",
