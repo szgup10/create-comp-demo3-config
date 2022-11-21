@@ -5,10 +5,8 @@ metadata:
   description: FLI Demo Template
   title: FLI Demo Template
   tags:
-    - java
-    - api
-    - microservice
-    - backend
+    - python
+    - example
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/ingka-group-digital/ilo-fli-allen-create-comp-demo
 spec:
