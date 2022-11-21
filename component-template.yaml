@@ -13,18 +13,21 @@ spec:
   owner: ilo-fli
   type: service # library, website, documentation, x
   config:
-    baseName: $(userInput.baseName)
+    teamSlug: $(dep.github-repository.team_slug)
+    repositoryName: $(dep.github-repository.name)
+    componentName: $(userInput.componentName)
     description: $(userInput.description)
-    owner: $(userInput.owner)
-    team_slug: $(dep.github-repository.team_slug)
-  template: ilo-fli-allen-create-comp-demo
+    ownerTeam: $(userInput.ownerTeam)
+    language: $(userInput.language)
+    systemAbbreviation: $(userInput.systemAbbreviation)
+  template: fli-demo-template
   user_input: |
     {
       "title": "Template variables",
       "description": "These variables are required for the template",
       "type": "object",
       "properties": {
-        "baseName": {
+        "componentName": {
           "title": "Component Name",
           "description": "Name of Component",
           "type": "string"
@@ -34,13 +37,31 @@ spec:
           "description": "Component Description",
           "type": "string"
         },
-        "owner": {
+        "ownerTeam": {
           "title": "Owning Team",
           "description": "Owner - INGKA Team",
-          "type": "string"
-        }
+          "ui:field": "OwnerTeamPicker",
+          "default": "ilo-fli"
+        },
+        "systemAbbreviation":{
+          "type":"string",
+          "title":"System Abbreviation",
+          "description":"The System abbreviation as defined in SMC (System Master Catalog)",
+          "ui:field": "SystemPicker",
+          "default": "FLI"
+        },
+        "language":{
+          "type":"string",
+          "title":"JVM Language",
+          "enum":[
+             "kotlin",
+             "java",
+             "python"
+          ],
+          "default":"python"
+          }
       },
-      "required": ["baseName", "description", "owner"]
+      "required": ["componentName", "description", "ownerTeam","systemAbbreviation","language"]
     }
   dependencies:
     - type: github-repository

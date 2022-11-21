@@ -1,7 +1,9 @@
 {
-  "baseName": "FLI Templates",
-  "description": "FLI Temmplates Description",
-  "repositoryName": "ilo-fli-templates",
-  "owner": "ilo-fli",
-  "team_slug": "ilo-fli"
+  "repositoryName": "ilo-fli-allen-demo",
+  "team_slug": "ilo-fli",
+  "componentName": "ilo-fli-component",
+  "description": "ILO FLI Component",
+  "ownerTeam":"ilo-fli",
+  "language":"python",
+  "systemAbbreviation": "FLI"
 }
