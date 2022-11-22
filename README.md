@@ -1,6 +1,9 @@
 # ILO FLI Allen Repository 
 
 ## Create Component
+
+This example repository will create a new repository by using a component template.
+
 ### Instructions
 
 [Workflow-getting started](https://portal.dev.ingka.com/docs/default/component/workflows/getting-started/)
