@@ -2,8 +2,8 @@ apiVersion: ingka.com/v1alpha1
 kind: ComponentTemplate
 metadata:
   name: ilo-fli-allen-create-comp-demo
-  description: FLI Demo Template - Create new Repository
-  title: FLI Demo Template
+  description: FLI Demo Template - Create new Repository from a cookiecutter template
+  title: FLI Demo Template - Create new Repository
   tags:
     - python
     - example
