@@ -6,5 +6,5 @@
 
 | Repository Owner   | Repository Name| System (SMC| Component Name | Owning Team |Language|
 |--------------------|----------------|------------|----------------|-------------|--------|
-|{{cookiecutter.teamSlug}}|{{cookiecutter.repositoryName}}|{{cookiecutter.systemAbbreviation}}|{{cookiecutter.componentName}}|{{cookiecutter.ownerTeam}}|{{cookiecutter.language}}|
+|{{cookiecutter.team_slug}}|{{cookiecutter.repositoryName}}|{{cookiecutter.systemAbbreviation}}|{{cookiecutter.componentName}}|{{cookiecutter.ownerTeam}}|{{cookiecutter.language}}|
 
