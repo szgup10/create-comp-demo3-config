@@ -1,4 +1,5 @@
-teamSlug = '{{cookiecutter.teamSlug}}'
+teamSlug = '{{cookiecutter.team_slug}}'
+team_slug = '{{cookiecutter.team_slug}}'
 repositoryName = '{{cookiecutter.repositoryName}}'
 componentName = '{{cookiecutter.componentName}}'
 description = '{{cookiecutter.description}}'
