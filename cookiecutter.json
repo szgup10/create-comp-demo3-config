@@ -1,6 +1,7 @@
 {
   "repositoryName": "ilo-fli-allen-demo",
   "team_slug": "ilo-fli",
+  "teamSlug": "ilo-fli",
   "componentName": "ilo-fli-component",
   "description": "ILO FLI Component",
   "ownerTeam":"ilo-fli",
